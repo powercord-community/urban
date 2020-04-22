@@ -3,5 +3,5 @@
   "version": "1.0.0",
   "description": "Allows you to search on urban dictionary and send the result, locally or in the chat",
   "author": "Bowser65",
-  "license": "AGPL-3.0"
+  "license": "OSL-3.0"
 }
