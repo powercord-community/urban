@@ -8,13 +8,16 @@ const { get } = require('powercord/http');
 
 module.exports = class Urban extends Plugin {
   startPlugin () {
-    this.registerCommand(
-      'urban',
-      [],
-      'Searches on urban dictionary and send the result, locally or in the chat',
-      '{c} <your search> [--send]',
-      this.urban.bind(this)
-    );
+    powercord.api.commands.registerCommand({
+      command: 'urban',
+      description: 'Searches on urban dictionary and send the result, locally or in the chat',
+      usage: '{c} <your search> [--send]',
+      executor: this.urban.bind(this)
+    });
+  }
+
+  pluginWillUnload () {
+    powercord.api.commands.unregisterCommand('urban');
   }
 
   async urban (args) {

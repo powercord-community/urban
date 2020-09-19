@@ -1,7 +1,7 @@
 {
   "name": "Urban",
-  "version": "1.0.0",
-  "description": "Allows you to search on urban dictionary and send the result, locally or in the chat",
+  "version": "1.1.0",
+  "description": "Allows you to search the Urban Dictionnary quickly through a command to better understand what people in front of you mean. You can even send the definition in chat, if you want to.",
   "author": "Bowser65",
   "license": "OSL-3.0"
 }
